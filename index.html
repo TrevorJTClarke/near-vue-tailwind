@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEAR + VUE + TAILWIND</title>
+    <link rel="stylesheet" href="/font/inter.css" />
+    <style>html { background: #eef8f9; } html.dark { background: #0A1F1C; }</style>
+    <script type="text/javascript">
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.querySelector('html').classList.add('dark')
+      } else {
+        document.querySelector('html').classList.remove('dark')
+      }
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- Build with Vite is messing import up somehow using local dep instead! -->
+    <script src="/node_modules/near-api-js/dist/near-api-js.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/gh/nearprotocol/near-api-js/dist/near-api-js.js"></script> -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+{
+  "name": "near-vue-tailwind",
+  "version": "0.1.0",
+  "description": "NEAR Protocol starter kit including Vue 3 & tailwind 2, enabling easy setup for a blockchain dApp",
+  "author": "trevorjtclarke",
+  "scripts": {
+    "dev": "vite --open",
+    "build": "cross-env NODE_ENV=production vite build"
+  },
+  "keywords": [
+    "NEAR",
+    "NEAR Protocol",
+    "NEAR",
+    "Blockchain",
+    "NEAR Blockchain",
+    "Vue",
+    "Vuejs",
+    "Vue 3",
+    "Tailwind"
+  ],
+  "dependencies": {
+    "vue": "^3.0.4",
+    "vue-axios": "^3.2.1",
+    "vue-near": "^0.1.1",
+    "vue-router": "^4.0.1",
+    "vuex": "^4.0.0-rc.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.2.0",
+    "@tailwindcss/forms": "^0.2.1",
+    "@tailwindcss/typography": "^0.3.1",
+    "@vitejs/plugin-vue": "^1.0.4",
+    "@vue/compiler-sfc": "^3.0.5",
+    "autoprefixer": "^9.8.6",
+    "cross-env": "^7.0.3",
+    "near-api-js": "^0.36.2",
+    "postcss": "^7.0.35",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
+    "vite": "^2.0.0-beta.8"
+  }
+}

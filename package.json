@@ -1,6 +1,6 @@
 {
   "name": "near-vue-tailwind",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "NEAR Protocol starter kit including Vue 3 & tailwind 2, enabling easy setup for a blockchain dApp",
   "author": "trevorjtclarke",
   "scripts": {

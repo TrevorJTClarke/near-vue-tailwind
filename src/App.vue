@@ -1,5 +1,5 @@
 <template>
-  <main class="bg-turquoise-50 dark:bg-turquoise-1000">
+  <main class="bg-gray-50 dark:bg-gray-900">
     <Header />
 
     <router-view />
@@ -12,10 +12,6 @@ export default {
   components: {
     Header,
   },
-
-  async mounted() {
-    await this.$nearInit()
-  }
 }
 </script>
 

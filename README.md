@@ -29,12 +29,20 @@ npm:
 npm install
 npm run dev
 npm run build
+npm run contract:build
+npm run contract:dev:deploy
+npm run contract:deploy
+npm run contract:test
 ```
 yarn:
 ```sh
 yarn
 yarn dev
 yarn build
+yarn contract:build
+yarn contract:dev:deploy
+yarn contract:deploy
+yarn contract:test
 ```
 
 ### Bonus

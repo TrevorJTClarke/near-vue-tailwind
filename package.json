@@ -5,7 +5,12 @@
   "author": "trevorjtclarke",
   "scripts": {
     "dev": "vite --open",
-    "build": "cross-env NODE_ENV=production vite build"
+    "build": "cross-env NODE_ENV=production vite build",
+    "prestart": "npm run contract:build && npm run contract:dev:deploy",
+    "contract:build": "node ./contract/build",
+    "contract:dev:deploy": "near dev-deploy --wasmFile ./contract/res/dummy_contract.wasm",
+    "contract:deploy": "near deploy --wasmFile ./contract/res/dummy_contract.wasm",
+    "contract:test": "cd contract && cargo test --package status-message -- --nocapture"
   },
   "keywords": [
     "NEAR",
@@ -35,6 +40,7 @@
     "cross-env": "^7.0.3",
     "near-api-js": "^0.36.2",
     "postcss": "^7.0.35",
+    "shelljs": "^0.8.4",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "vite": "^2.0.0-beta.8"
   }
